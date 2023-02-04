@@ -1,0 +1,102 @@
+html{
+    background-image: url("4.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.to_main{
+    color: #ffffff;
+}
+
+.to_main a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 200px 200px 200px 200px 200px; 
+    grid-template-rows: 200px 200px 200px 200px 200px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". . . . ."
+    ". box box box ."
+    ". box box box ."
+    ". . . . ."
+    "box_f box_f box_f box_f box_f"; 
+      justify-content: center;
+  }
+
+.box { 
+    grid-area: box; 
+    background-color: rgb(0, 112, 209);
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid #96adf7;
+    text-align: center;
+}
+
+.box_f{
+    grid-area: box_f; 
+    padding: 10px;
+}
+
+.col3 {
+    text-align: right;
+    margin: 4em;
+    color: #f7f7f7;
+}
+
+.number{
+    width: 360px;
+}
+
+.range{
+    width: 450px;
+    height: 50px;
+    position: relative;
+}
+
+.range > input[type="range"]{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.range > .range-num{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.in_text{
+    text-align: left;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.pers{
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 400px;
+    position: absolute;
+    font-size: 3em;
+    color: #f7f7f7;
+}
+
+.pos_m{
+    right: 180px;
+    position:  relative;
+}
+
+.button_pos{
+    top: 40px;
+    position:  relative;
+}

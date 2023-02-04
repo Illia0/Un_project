@@ -85,6 +85,15 @@ html{
     font-size: 2em;
 }
 
+.l_text a{
+    color: #000;
+    text-decoration: none;
+}
+
+.l_text a:hover, .l_text a.active {
+    color: #ffffff;
+}
+
 .col4 {
     text-align: left;
     margin: 4em;
@@ -99,12 +108,14 @@ ul {
     color: #f7f7f7;
     text-align: left;
     font-size: 4em;
+    text-decoration: none;
 }
 
 .col4 ul li a:hover, .nav ul li a.active {
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     list-style-type: upper-roman;
+    text-decoration: none;
 }
 
 .img_side{

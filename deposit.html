@@ -6,11 +6,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="to_main"><a href="1.html">Головна сторінка</a> - Депозити</div>
+        <div class="box1">
+            <div class="to_main"><a href="1.html">Головна сторінка</a> - Депозити</div>
+        </div>
         <div class="box">
             <h1>Оформлення депозиту</h1>
             <div class="in_text">Сумма депозиту:</div>
-            <div class="pos_m"><input type="text" id="money"></div>
+            <input type="text" id="money" placeholder="Enter Sum" name="money" required>
             <div class="in_text">Кількість місяців:</div>
             <div class="range">
                 <input type="range" class="number" min="0" max="24" value="0">
@@ -19,7 +21,7 @@
             </div>
             <div class="in_text">Ви отримаєте:</div>
             <div class="res_num">0</div>
-            <div class="button_pos"><button id="check">Оформити</button></div>
+            <button id="check" class="button_pos">Оформити</button>
         </div>
         <div class="box_f">
             <div class="col3">

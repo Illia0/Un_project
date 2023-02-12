@@ -13,6 +13,7 @@ html{
     background-attachment: fixed;
 }
 
+
 @media screen and (min-width: 500px) {
     .container {
         display: grid;

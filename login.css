@@ -23,37 +23,82 @@ html{
     grid-template-rows: 200px 200px 200px 200px 200px; 
     gap: 0px 0px; 
     grid-template-areas: 
-    ". . . . ."
-    ". box box . ."
-    ". box box . ."
-    ". box box . ."
+    ". box1 box1 . box2"
+    ". box box . box2"
+    ". box box . box2"
+    ". box box . box2"
     ". . . . ."; 
       justify-content: center;
   }
 
 .box { 
     grid-area: box; 
-    background-color: rgb(0, 112, 209);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
-    border: 5px solid #96adf7;
+    border: 5px solid #ffffff;
     text-align: center;
 }
 
-.sign_in{
-    text-align: left;
-    margin: 2em;
-    color: azure;
+.box1{
+    grid-area: box1; 
+    padding: 10px;
+    padding-top: 30px;
 }
 
-.sign_in a{
-    text-align: left;
-    margin: 2em;
-    color: azure;
-    text-decoration: none;
+.box2{
+    grid-area: box2; 
+}
+
+.signin {
+    text-align: center;
+}
+
+a {
+    color: dodgerblue;
 }
 
 .l_img{
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.r_img{
+    padding-top: 20px;
+}
+
+.r1_img{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.r2_img{
+    padding-top: 150px;
+}
+
+.registerbtn {
+    background-color: #3329c2;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 1.2em;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #d7e2ff;
+}
+
+

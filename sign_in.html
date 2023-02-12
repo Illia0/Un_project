@@ -5,15 +5,19 @@
     <link type="text/css" rel="stylesheet" href="sign_in.css">
 </head>
 <body>
-    <div class="to_main"><a href="1.html">Головна сторінка</a> - реестрація</div>
     <div class="container">
+        <div class="box1">
+            <div class="to_main"><a href="1.html">Головна сторінка</a> - реестрація</div>
+        </div>
         <div class="box">
-            Зарееструвати аккаунт
             <div class="l_img"><img src="sign_in.png" height="160" width="160" alt="123"></div>
-            <p>Логін: <input type="text" id="login"></p>
-            <p>Пароль: <input type="password" id="password"></p>
-            <p>Повних років: <input type="text" id="age"></p>
-            <button id="check">Sign in</button>
+            <label for="login"><b>Login</b></label>
+            <input type="text" id="login" placeholder="Enter Login" name="login" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+            <label for="age"><b>Your age</b></label>
+            <input type="text" id="age" placeholder="Enter age" name="age" required>
+            <button id="check" class="registerbtn">Sign in</button>
             <script src="sign_in.js"></script>
         </div>
     </div>

@@ -8,22 +8,13 @@ html{
 }
 
 
-.to_main{
-    color: #ffffff;
-}
-
-.to_main a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .container {
     display: grid; 
     grid-template-columns: 200px 200px 200px 200px 200px; 
     grid-template-rows: 200px 200px 200px 200px 200px 200px; 
     gap: 0px 0px; 
     grid-template-areas: 
-    ". box1 box1 box1 ."
+    "hed . . . reg"
     ". box box box ."
     ". box box box ."
     ". box box box ."
@@ -41,11 +32,15 @@ html{
     text-align: center;
 }
 
-.box1{
-    grid-area: box1;
-    padding: 10px;
-    padding-top: 30px;
+.hed{
+    grid-area: hed;
+    padding-left: 40px;
 }
+
+.reg{
+    grid-area: reg;
+}
+
 
 .box_f{
     grid-area: box_f; 
@@ -129,4 +124,28 @@ input[type=text], input[type=password] {
 
 .button_pos:hover {
     opacity:1;
+}
+
+.login{
+    margin: 3em 4em 3em 2em;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(247, 204, 14);
+    float: right;
+    border: 1px solid black;
+}
+
+.l_text{
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 2em;
+}
+
+.l_text a{
+    color: #000;
+    text-decoration: none;
+}
+
+.l_text a:hover, .l_text a.active {
+    color: #ffffff;
 }

@@ -64,7 +64,7 @@ html{
 
 
 .money{
-    margin: 2em 1em 1em 2em;
+    margin: 2em 1em 1em 1em;
     font-size: 1.5em;
     line-height: 1.5;
     color: aliceblue;
@@ -72,7 +72,7 @@ html{
 }
 
 .login{
-    margin: 3em 4em 3em 2em;
+    margin: 3em 1em 3em 2em;
     height: 70px;
     width: 200px;
     background-color: rgb(247, 204, 14);

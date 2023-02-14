@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="post.css">
+
+    {% if title %}
+        <title>Відгуки та пропозиції - {{ title }}</title>
+    {% else %}
+        <title>Відгуки та пропозиції</title>
+    {% endif %}
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="logo"><a href="1.html"><img src="logo.webp" height="160" width="120" alt="123"></a></div>
+            <div class="top_text"><a href="{% url 'com' %}">Відгуки та пропозиції</a></div>
+        </div>
+        <div class="box2">
+              <!-- Navbar Right Side -->
+              <!--{% if user.is_authenticated %}-->
+              <div class="login"><div class="l_text"><a href="login.html">New post</a></div></div>
+              <div class="login"><div class="l_text"><a href="profile.html">Profile</a></div></div>
+              <div class="login"><div class="l_text"><a href="logout.html">Logout</a></div></div>
+            <!--{% else %}-->
+              <!--<div class="login"><div class="l_text"><a href="login.html">Login</a></div></div>-->
+              <!--<div class="login"><div class="l_text"><a href="sign_in.html">Register</a></div></div>-->
+            <!--{% endif %}-->
+            </div>
+        </div>
+        <div class="main">
+            <main role="main" class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    {% if messages %}
+                      {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    {% endif %}
+                    {% block content %}{% endblock %}
+                  </div>
+                </div>
+              </main>
+        </div>
+      
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

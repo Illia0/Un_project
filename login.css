@@ -29,7 +29,7 @@ html{
     ". box box . box2"
     ". . . . ."; 
       justify-content: center;
-  }
+}
 
 .box { 
     grid-area: box; 

@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html{
+    background-image: url("4.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 300px) {
+    .container {
+        display: grid; 
+        grid-template-rows: 200px 200px 1fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "main";
+        justify-content: center;
+    }
+
+    .login{
+        margin: 3em 1em 3em 2em;
+        height: 20px;
+        width: 50px;
+        background-color: rgb(247, 204, 14);
+        float: right;
+        border: 1px solid black;
+    }
+    .l_text{
+        text-align: center;
+        margin: 4px 0 0 0;
+        font-size: 0.7em;
+    }
+    
+    .l_text a{
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .l_text a:hover, .l_text a.active {
+        color: #ffffff;
+    }
+
+    .top_text a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1em;
+        float: right;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container {
+        display: grid; 
+        grid-template-rows: 200px auto; 
+        grid-template-columns: 500px 700px; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "box1 box2"
+        "main main";
+        justify-content: center;
+    }
+
+    .login{
+        margin: 3em 1em 3em 2em;
+        height: 60px;
+        width: 160px;
+        background-color: rgb(247, 204, 14);
+        float: right;
+        border: 1px solid black;
+    }
+    .l_text{
+        text-align: center;
+        margin: 10px 0 0 0;
+        font-size: 2em;
+    }
+    
+    .l_text a{
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .l_text a:hover, .l_text a.active {
+        color: #ffffff;
+    }
+
+    .top_text a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.5em;
+        float: right;
+        margin: 1em;
+    }
+}
+
+
+.box1 {
+    grid-area: box1;
+    padding: 10px;
+}
+
+
+.box2 {
+    grid-area: box2;
+    padding: 10px;
+}
+
+.main{
+    grid-area: main;
+    padding: 10px;
+    background-color: rgba(0, 255, 64, 0.579);
+}
+
+
+.top_text a:hover, .top_text a.active {
+    color: #ababab;
+}
+
+.logo{
+    float: left;
+}
